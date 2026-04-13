@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Justin's Morning Brief</title>
+    <link>https://YOURUSERNAME.github.io/morning-brief/feed.xml</link>
+    <description>Daily personal briefing — weather, world news, Australian business, property, and Bitcoin.</description>
+    <language>en-au</language>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:category text="News"/>
+    <itunes:author>Justin Gaggino</itunes:author>
+  </channel>
+</rss>

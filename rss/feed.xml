@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
-  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Justin's Morning Brief</title>
-    <link>https://YOURUSERNAME.github.io/morning-brief/feed.xml</link>
+    <link>https://justingaggino.github.io/morning-brief/feed.xml</link>
     <description>Daily personal briefing — weather, world news, Australian business, property, and Bitcoin.</description>
     <language>en-au</language>
     <itunes:explicit>no</itunes:explicit>
     <itunes:category text="News"/>
     <itunes:author>Justin Gaggino</itunes:author>
+    <lastBuildDate>Mon, 13 Apr 2026 13:20:02 +1000</lastBuildDate>
+
+    <item>
+      <title>Morning Brief — Monday, 13 April 2026</title>
+      <enclosure url="https://pub-15baea5747164548864610801828a286.r2.dev/2026-04-13.mp3" type="audio/mpeg" length="4936977"/>
+      <pubDate>Mon, 13 Apr 2026 05:45:00 +1000</pubDate>
+      <guid isPermaLink="false">2026-04-13</guid>
+      <itunes:duration>480</itunes:duration>
+      <description>Morning Brief — Monday, 13 April 2026</description>
+    </item>
   </channel>
 </rss>

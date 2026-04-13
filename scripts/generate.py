@@ -211,35 +211,35 @@ def generate_script(weather, world_news, au_business, property_news, bitcoin, bi
 
     prompt = f"""You are producing a personal spoken morning briefing for Justin Gaggino — General Manager of Hismile, based in Mudgeeraba on the Gold Coast. He is 33, commercially sharp, financially literate, and time-poor. He holds Bitcoin as part of his retirement strategy. He owns property on the Gold Coast.
 
-Today is {date_str}. Write a natural, conversational spoken script that covers these five sections in order. The entire script should take 6-8 minutes to read aloud at a comfortable pace (roughly 900-1100 words).
+Today is {date_str}. Write a natural, conversational spoken script that covers these five sections in order. The entire script should take 10-12 minutes to read aloud at a comfortable pace (roughly 1500-1800 words).
 
-Write it as it will be spoken — no headers, no bullet points, no markdown. Use natural spoken transitions. Be direct and specific. Do not use filler phrases or corporate speak. Assume the listener is smart and wants insight, not just headlines.
+Write it as it will be spoken — no headers, no bullet points, no markdown. Use natural spoken transitions between every section. Be direct and specific. Do not use filler phrases or corporate speak. Assume the listener is smart and wants insight, not just headlines. For every story go beyond the headline — explain what happened, why it matters, what the likely implications are, and what to watch next.
 
 ---
 
-SECTION 1 — WEATHER (Gold Coast today):
+SECTION 1 — WEATHER (Gold Coast today, keep this brief — 2-3 sentences max):
 {json.dumps(weather, indent=2)}
 
-SECTION 2 — WORLD NEWS (pick the 3 most significant international stories):
+SECTION 2 — WORLD NEWS (cover the 5 most significant international stories in depth — for each one explain what happened, why it matters globally, and what to watch next. Spend at least 2-3 sentences per story. Pick stories with real geopolitical, economic, or social significance):
 {world_news_text}
 
-SECTION 3 — AUSTRALIAN BUSINESS & ECONOMY (pick 2-3 most relevant stories):
+SECTION 3 — AUSTRALIAN BUSINESS & ECONOMY (cover 4-5 stories in depth — for each one explain the business or economic implication, not just the headline. Include any relevant impact on Australian consumers, businesses, or markets. Spend at least 2-3 sentences per story):
 {au_business_text}
 
-SECTION 4 — PROPERTY MARKET (Gold Coast and wider Australian housing):
+SECTION 4 — PROPERTY MARKET (Gold Coast and wider Australian housing market — give real insight here, not just headlines. Cover price movements, auction clearance rates, demand trends, and any policy or rate decisions affecting the market. 3-4 sentences minimum):
 {property_text}
 
-SECTION 5 — BITCOIN UPDATE:
+SECTION 5 — BITCOIN UPDATE (cover the current price in both AUD and USD, the 24h and 7-day movement, how far it is from all-time high, and then cover any significant news or market events driving the price. Give context on whether this is a meaningful move or noise. 3-4 sentences minimum):
 Price data: {json.dumps(bitcoin, indent=2)}
 Recent news: {btc_news_text}
 
 ---
 
-Start the script with "Good morning Justin" and today's date spoken naturally. End with a brief, sharp sign-off — one sentence, no inspirational quotes."""
+Start the script with "Good morning Justin" and today's date spoken naturally. End with a brief, sharp one-sentence sign-off. No inspirational quotes."""
 
     message = client.messages.create(
         model="claude-opus-4-5",
-        max_tokens=2000,
+        max_tokens=4000,
         messages=[{"role": "user", "content": prompt}]
     )
     return message.content[0].text

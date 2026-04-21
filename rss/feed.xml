@@ -10,8 +10,16 @@
     <itunes:explicit>no</itunes:explicit>
     <itunes:category text="News"/>
     <itunes:author>Justin Gaggino</itunes:author>
-    <lastBuildDate>Tue, 21 Apr 2026 06:12:11 +1000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 06:29:19 +1000</lastBuildDate>
 
+    <item>
+      <title>Morning Brief — Wednesday, 22 April 2026</title>
+      <enclosure url="https://pub-15baea5747164548864610801828a286.r2.dev/2026-04-22.mp3" type="audio/mpeg" length="6515191"/>
+      <pubDate>Wed, 22 Apr 2026 05:45:00 +1000</pubDate>
+      <guid isPermaLink="false">2026-04-22</guid>
+      <itunes:duration>480</itunes:duration>
+      <description>Morning Brief — Wednesday, 22 April 2026</description>
+    </item>
     <item>
       <title>Morning Brief — Tuesday, 21 April 2026</title>
       <enclosure url="https://pub-15baea5747164548864610801828a286.r2.dev/2026-04-21.mp3" type="audio/mpeg" length="6821973"/>

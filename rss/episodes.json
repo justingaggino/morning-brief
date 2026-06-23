@@ -1,5 +1,13 @@
 [
   {
+    "title": "Morning Brief \u2014 Wednesday, 24 June 2026",
+    "url": "https://pub-15baea5747164548864610801828a286.r2.dev/2026-06-24.mp3",
+    "file_size_bytes": 7548804,
+    "pub_date": "Wed, 24 Jun 2026 05:45:00 +1000",
+    "guid": "2026-06-24",
+    "duration_seconds": 480
+  },
+  {
     "title": "Morning Brief \u2014 Tuesday, 23 June 2026",
     "url": "https://pub-15baea5747164548864610801828a286.r2.dev/2026-06-23.mp3",
     "file_size_bytes": 7760710,
@@ -229,14 +237,6 @@
     "file_size_bytes": 9528259,
     "pub_date": "Thu, 14 May 2026 05:45:00 +1000",
     "guid": "2026-05-14",
-    "duration_seconds": 480
-  },
-  {
-    "title": "Morning Brief \u2014 Wednesday, 13 May 2026",
-    "url": "https://pub-15baea5747164548864610801828a286.r2.dev/2026-05-13.mp3",
-    "file_size_bytes": 8441147,
-    "pub_date": "Wed, 13 May 2026 05:45:00 +1000",
-    "guid": "2026-05-13",
     "duration_seconds": 480
   }
 ]
